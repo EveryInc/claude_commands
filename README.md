@@ -101,6 +101,28 @@ Systematically addresses all PR feedback, comments, and requested changes.
 - GitHub API command examples
 - Resolution tracking
 
+## Understanding Claude Integration Files
+
+### Claude Configuration (`00_meet_claude.md`)
+
+This comprehensive document serves as Claude Code's self-documentation and capability reference. While not a command template like the numbered files, it provides essential context for:
+
+**For New Users:**
+- Understanding Claude's full toolkit and capabilities
+- Learning optimal prompting strategies for better results
+- Discovering advanced features like parallel tool execution
+- Getting insights into Claude's cognitive architecture
+
+**For Development Teams:**
+- Reference for Claude's available tools and integrations
+- Best practices for AI-assisted development workflows
+- Performance optimization techniques
+- Understanding limitations and constraints
+
+**Note:** This file represents Claude's internal knowledge about its own capabilities. While you don't need to read it to use the command templates, it's valuable for understanding how to work most effectively with Claude Code and unlock advanced features.
+
+**Important:** This is different from the standard `CLAUDE.md` memory file that stores project-specific instructions. For information about project memory files, see the [Memory documentation](https://docs.anthropic.com/en/docs/claude-code/memory).
+
 ## Usage
 
 Templates can be used as slash commands or copied directly:

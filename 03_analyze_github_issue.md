@@ -19,7 +19,7 @@ Analyze the code thoroughly until you feel you have a solid understanding of the
    - Performance considerations
    - Security implications
    - Backwards compatibility (if applicable)
-   - Inlcude the reference link to faeturebase or any opther link that has the source of the user request
+   - Inlcude the reference link to featurebase or any opther link that has the source of the user request
 
 5. Think deeply about all aspects of the task. Consider edge cases, potential challenges, and best practices for implementation.
 

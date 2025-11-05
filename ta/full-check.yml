@@ -1,0 +1,9 @@
+name: full-check
+description: Run linting, type checking, and tests
+prompt: |
+  Please run these commands in sequence:
+  - First run: claude lint
+  - Then run: claude typecheck  
+  - Finally run: claude test
+  
+  Show me the output from each step.

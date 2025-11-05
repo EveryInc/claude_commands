@@ -1,0 +1,10 @@
+name: deploy-full
+description: Run full deployment workflow - test, build, and deploy
+prompt: |
+  Execute the following workflow in order:
+  1. Run the 'test' command to verify all tests pass
+  2. If tests pass, run the 'build' command 
+  3. If build succeeds, run the 'deploy' command
+  4. Report status after each step
+  
+  Stop the workflow if any step fails and report which step failed.

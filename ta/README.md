@@ -226,6 +226,61 @@
 
 ---
 
+### `/ta:task-review`
+**File:** `task-review.md`
+**Purpose:** Multi-perspective task review - solicits feedback from 12 professional profiles (security, performance, UX, DevOps, QA, accessibility, documentation, product, backend, frontend, database, code review)
+
+**Use when:**
+- Planning a new feature or change
+- Want comprehensive feedback before implementation
+- Need multiple perspectives on a task
+- Reviewing tasks from a todo list
+- Ensuring nothing was missed
+
+**What it does:**
+1. Takes a task description (or reads from todo list)
+2. Invokes all 12 professional perspective profiles
+3. Each profile provides feedback OR abstains if not relevant
+4. Consolidates all feedback into a structured review
+5. Highlights key concerns and recommendations
+6. Offers to create follow-up tasks for concerns raised
+
+**Available Profiles:**
+- Security Engineer - Security vulnerabilities, auth, data protection
+- Performance Engineer - Performance, scalability, optimization
+- UX Designer - User experience, usability, workflows
+- DevOps Engineer - Deployment, infrastructure, monitoring
+- QA Engineer - Testing, edge cases, quality assurance
+- Accessibility Specialist - WCAG compliance, inclusive design
+- Technical Writer - Documentation, clarity, developer experience
+- Product Manager - Business value, user needs, requirements
+- Backend Engineer - API design, business logic, data modeling
+- Frontend Engineer - Components, state management, UI code
+- Database Architect - Schema design, queries, data integrity
+- Code Reviewer - Code quality, patterns, best practices
+
+**Key features:**
+- Profiles abstain when not relevant (reduces noise)
+- Structured feedback with severity levels
+- Consolidated summary of all concerns
+- Integration with TodoWrite for follow-up tasks
+
+**Example:**
+```
+# Review a specific task
+/ta:task-review for: Add user authentication endpoint with OAuth
+
+# Review from todo list
+/ta:task-review
+[Then select which task(s) to review]
+```
+
+**Output:** Comprehensive review showing feedback from each relevant profile, key concerns, and overall readiness assessment.
+
+**Related:** Profile skills in `~/.claude/skills/` can be invoked individually for deeper discussion on specific concerns.
+
+---
+
 ## Command Template Structure
 
 When creating new `/ta:` commands, follow this structure:
@@ -443,5 +498,5 @@ When adding new `/ta:` commands:
 ---
 
 **Repository:** `~/.claude/commands/` (git-tracked)
-**Last Updated:** 2025-10-03
+**Last Updated:** 2025-11-05
 **Maintained By:** User + Claude Code collaboration
